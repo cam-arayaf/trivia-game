@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4ea18b">
+    <meta name="description" content="Trivia Game">
+    <title>Trivia Game</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Trivia Game</h1>
+    </header>
+
+    <div id="greeting">
+      <p>Welcome to Trivia Game.</p>
+      <p>Please, write your name:</p>
+      <input type="text" autocomplete="off" placeholder="Your name" id="name" />
+      <button id="next" disabled="true">Next</button>
+    </div>
+
+    <div id="trivias-results" class="hide">
+      <p></p>
+      <p></p>
+      <button id="trivia-one">Trivia One</button>
+      <button id="trivia-two">Trivia Two</button>
+    </div>
+
+    <div id="question" class="hide">
+      <p></p>
+      <p></p>
+      <div>
+        <label for="alternative-one"></label>
+        <input
+          type="radio"
+          name="alternatives"
+          id="alternative-one"
+          value="0"
+        />
+      </div>
+      <div>
+        <label for="alternative-two"></label>
+        <input
+          type="radio"
+          name="alternatives"
+          id="alternative-two"
+          value="1"
+        />
+      </div>
+      <div>
+        <label for="alternative-three"></label>
+        <input
+          type="radio"
+          name="alternatives"
+          id="alternative-three"
+          value="2"
+        />
+      </div>
+      <p></p>
+      <button id="send-answer" disabled="true">Send Answer</button>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
